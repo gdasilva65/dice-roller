@@ -1,27 +1,13 @@
-body, html {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-}
-
-.container {
-    margin: auto;
-    width: 50%;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-#diceResults {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
+/* Add or adjust your existing CSS with these styles */
 .dice {
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid #000;
-    display: inline-block;
-    min-width: 50px;
-    text-align: right;
+    text-align: right; /* Right-aligns text */
+    font-size: 20px; /* Increases font size for visibility */
+    width: 60px; /* Sets a fixed width for dice */
+    height: 60px; /* Sets a fixed height for dice */
+    line-height: 60px; /* Centers the number vertically */
+    border: 2px solid #666; /* Adds a border to each dice */
+    margin: 5px; /* Adds spacing between dice */
+    display: inline-block; /* Aligns dice next to each other */
+    background-color: #f9f9f9; /* Adds a background color to dice */
+    box-shadow: 0 0 5px #999; /* Adds a subtle shadow for depth */
 }
