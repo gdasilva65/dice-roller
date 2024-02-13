@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Roller</title>
+    <title>Yahtzee Dice Roller</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="rollDice()">
     <div class="container">
-        <h1>Dice Roller for Parlays</h1>
-        <p>To roll the dice, click the "Roll" button or press Enter.</p>
-        <button id="rollButton" autofocus onclick="rollDice()">Roll</button>
-        <div id="diceResults"></div>
+        <h1>Yahtzee Dice Roller</h1>
+        <p>To roll the dice, click the "Roll" button or press Enter. The dice will also roll automatically when the page loads.</p>
+        <button id="rollButton" autofocus onclick="rollDice()">Roll Dice</button>
+        <div id="diceResults" class="dice-container"></div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
