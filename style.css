@@ -1,0 +1,27 @@
+body, html {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#diceResults {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.dice {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    display: inline-block;
+    min-width: 50px;
+    text-align: right;
+}
