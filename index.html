@@ -6,18 +6,19 @@
     <title>Yahtzee Dice Roller</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload = "fetchRollDice()">
+    
     <div class="container">
         <h1>Yahtzee Dice Roller</h1>
         <p>To roll the dice, click the "Roll" button or press Enter. The dice will also roll automatically when the page loads.</p>
-        <button id="R" autofocus onclick="fetch2Plus2()">Roll Dice</button>
-        <div id="fetch-2plus2-result" class="dice-container"></div>
+        <button id="R" autofocus onclick="fetchRollDice()">Roll Dice</button>
+        <div id="fetch-dice-result" class="dice-container"></div>
     </div>
  <script>
-     async function fetch2Plus2() {
-                const response = await fetch("https://node-azure-diceroller-api.azurewebsites.net/2plus2")
+     async function fetchRollDice() {
+                const response = await fetch("https://node-azure-diceroller-api.azurewebsites.net/rolldice")
                 const responseText = await response.text()
-                document.getElementById("fetch-2plus2-result").innerHTML = responseText
+                document.getElementById("fetch-dice-result").innerHTML = responseText
             }
  </script>
 </body>
